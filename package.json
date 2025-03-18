@@ -1,0 +1,17 @@
+{
+  "name": "lunajoy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:create": "pnpm --filter server run prisma:migrate",
+    "db:reset": "pnpm --filter server run prisma:reset",
+    "dev": "concurrently \"pnpm --filter server dev\" \"pnpm --filter client dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
