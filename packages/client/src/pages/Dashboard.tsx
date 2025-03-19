@@ -63,7 +63,6 @@ const Dashboard: React.FC = () => {
         className="flex items-center text-white hover:text-gray-300 transition"
       >
         <FiLogOut className="w-6 h-6 mr-2" />
-        Logout
       </button>
       </div>
       <h1 className="text-3xl font-bold text-white">Dashboard</h1>

@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import jwt from "jsonwebtoken";
 
-
 export class AuthController {
   async googleCallback(req: Request, res: Response): Promise<void> {
 

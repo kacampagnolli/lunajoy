@@ -7,7 +7,7 @@ export class HealthRepository {
     this.prisma = prismaClient;
   }
 
-  async createHealthRecord(data: Omit<HealthLog, "id" | "createdAt">, ): Promise<HealthLog> {
+  async createHealthRecord(data: Omit<HealthLog, "id" | "createdAt">): Promise<HealthLog> {
     return this.prisma.healthLog.create({ data });
   }
 
